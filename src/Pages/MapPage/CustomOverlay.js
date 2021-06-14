@@ -164,9 +164,7 @@ CustomOverlay.prototype.getPosition = function () {
 };
 
 CustomOverlay.prototype.draw = function () {
-  // 지도 객체가 설정되지 않았으면 draw 기능을 하지 않습니다.
   if (!this.getMap()) return;
-  // projection 객체를 통해 LatLng 좌표를 화면 좌표로 변경합니다.
   const projection = this.getProjection();
   const position = this.getPosition();
   const pixelPosition = projection.fromCoordToOffset(position);
@@ -177,5 +175,4 @@ CustomOverlay.prototype.draw = function () {
 CustomOverlay.prototype.onRemove = function () {
   let overlayLayer = this.getPanes().overlayLayer;
   overlayLayer.innerHTML = '';
-  // this._element.off();
 };

@@ -9,10 +9,8 @@ export default function MapSearch({
   getMapDataSearch,
 }) {
   const onKeyPressHandler = e => {
-    // delayedQueryCall(e.target.value);
     if (e.code === 'Enter') {
       getMapDataSearch(e.target.value);
-      // getMapData();
     }
   };
 
