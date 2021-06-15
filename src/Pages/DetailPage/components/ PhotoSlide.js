@@ -71,7 +71,7 @@ const Left = styled.button`
   border: 1px solid #fff;
   opacity: 0.9;
   top: 50%;
-  left: -100px;
+  left: -101px;
   cursor: pointer;
 `;
 

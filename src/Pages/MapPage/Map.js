@@ -69,14 +69,11 @@ export default function Map({
   };
 
   useEffect(() => {
-    // if (!map && !roomList.length) return;
     if (!map) return;
     if (markersRef.current.length) {
       deleteMarker();
     }
-    console.log(roomList, subwayList, univList);
 
-    // name, type
     if (roomList)
       createMarker(
         roomList.map(el => {
@@ -108,119 +105,3 @@ export default function Map({
     </div>
   );
 }
-
-// import React, { useRef, useEffect } from 'react';
-// import styled from 'styled-components';
-// import { debounce } from 'lodash';
-
-// function Map({
-//   center,
-//   zoom,
-//   roomList,
-//   subwayList,
-//   univList,
-//   markerRefList,
-//   getMapData,
-// }) {
-//   const mapRef = useRef();
-
-//   const initMap = () => {
-//     var CustomOverlay = function (options) {
-//       this._element = markerRefList[options.idx];
-
-//       this.setPosition(options.position);
-//       this.setMap(options.map || null);
-//     };
-
-//     CustomOverlay.prototype = new window.naver.maps.OverlayView();
-//     CustomOverlay.prototype.constructor = CustomOverlay;
-
-//     CustomOverlay.prototype.setPosition = function (position) {
-//       this._position = position;
-//       this.draw();
-//     };
-
-//     CustomOverlay.prototype.getPosition = function () {
-//       return this._position;
-//     };
-
-//     CustomOverlay.prototype.onAdd = function () {
-//       var overlayLayer = this.getPanes().overlayLayer;
-//       overlayLayer.append(this._element);
-//     };
-
-//     CustomOverlay.prototype.draw = function () {
-//       if (!this.getMap()) {
-//         return;
-//       }
-//       var projection = this.getProjection(),
-//         position = this.getPosition(),
-//         pixelPosition = projection.fromCoordToOffset(position);
-
-//       this._element.style.left = `${pixelPosition.x}px`;
-//       this._element.style.top = `${pixelPosition.y}px`;
-//     };
-
-//     let centerPosition = new window.naver.maps.LatLng(
-//       center.latitude,
-//       center.longitude
-//     );
-
-//     const map = new window.naver.maps.Map(mapRef.current, {
-//       center: centerPosition,
-//       zoom: zoom,
-//     });
-
-//     for (let i = 0; i < markerRefList.length; i++) {
-//       let position;
-//       if (i < roomList.length) {
-//         position = new window.naver.maps.LatLng(
-//           roomList[i].latitude,
-//           roomList[i].longitude
-//         );
-//       } else if (
-//         roomList.length <= i &&
-//         i < roomList.length + subwayList.length
-//       ) {
-//         position = new window.naver.maps.LatLng(
-//           subwayList[i - roomList.length].latitude,
-//           subwayList[i - roomList.length].longitude
-//         );
-//       } else {
-//         position = new window.naver.maps.LatLng(
-//           univList[i - (roomList.length + subwayList.length)].latitude,
-//           univList[i - (roomList.length + subwayList.length)].longitude
-//         );
-//       }
-
-//       new CustomOverlay({
-//         map: map,
-//         position: position,
-//         idx: i,
-//       });
-//     }
-
-//     window.naver.maps.Event.addListener(map, 'dragend', function () {
-//       // getMapData(map.center._lat, map.center._lng, zoom);
-//     });
-
-//     window.naver.maps.Event.addListener(map, 'zoom_changed', function () {
-//       // getMapData(map.center._lat, map.center._lng, zoom);
-//     });
-//   };
-
-//   useEffect(() => {
-//     initMap();
-//   }, [univList]);
-
-//   return <MapComponent ref={mapRef}></MapComponent>;
-// }
-
-// export default Map;
-
-// const MapComponent = styled.div`
-//   display: inline-block;
-//   width: 79.3%;
-//   height: 86.7vh;
-//   border: 1px solid gray;
-// `;
