@@ -1,11 +1,9 @@
 # Team NoHomeOnlyMe
 
 ## 🏠 프로젝트 소개
+다방 사이트를 모티브를 하여 프로젝트를 진행하였습니다.
 ![1](https://user-images.githubusercontent.com/74593343/122660497-1964e980-d1bd-11eb-963d-a3a0adb109c7.gif)
 
-
-React를 사용한 '다방' 웹사이트 클론  
-https://www.dabangapp.com/?gclid=Cj0KCQjwytOEBhD5ARIsANnRjVh7Jh6Qpw5MnmuREflBFhQSucuVsVhSURDkkSBLWlxnCRYXFeXJUAIaAlXBEALw_wcB
 
 ## 🏢 프로젝트 기간
 
@@ -60,12 +58,15 @@ https://www.dabangapp.com/?gclid=Cj0KCQjwytOEBhD5ARIsANnRjVh7Jh6Qpw5MnmuREflBFhQ
 # ⭐️ 구현한 기능
 
 ### KakaoTalk API를 사용해 소셜로그인 구현
+![Uploading 2.gif…]()
 
 ### Naver Map API를 사용해 지도 구현
 
 ### 집 여러 정보가 나오는 디테일 페이지 구현
+![3](https://user-images.githubusercontent.com/74593343/122660733-6dbc9900-d1be-11eb-97e4-31cfd10417f0.gif)
 
 ### 마커 버튼을 생성해 띄운 마커를 클릭시 생성 제거 기능구현
+![4](https://user-images.githubusercontent.com/74593343/122660728-66958b00-d1be-11eb-9ac1-f6362c3a37c2.gif)
 
 
 ---
