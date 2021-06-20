@@ -58,14 +58,14 @@
 # ⭐️ 구현한 기능
 
 ### KakaoTalk API를 사용해 소셜로그인 구현
-![Uploading 2.gif…]()
+(로컬스토리지에 토큰이 저장돼있어 카카오 팝업창이 나오는 부분 녹화를 못했습니다.)
+![2](https://user-images.githubusercontent.com/74593343/122660742-87f67700-d1be-11eb-9d60-eb0369b75613.gif)
 
-### Naver Map API를 사용해 지도 구현
 
 ### 집 여러 정보가 나오는 디테일 페이지 구현
 ![3](https://user-images.githubusercontent.com/74593343/122660733-6dbc9900-d1be-11eb-97e4-31cfd10417f0.gif)
 
-### 마커 버튼을 생성해 띄운 마커를 클릭시 생성 제거 기능구현
+### Naver Map API를 사용해 지도 구현 마커 버튼을 생성해 띄운 마커를 클릭시 생성 제거 기능구현
 ![4](https://user-images.githubusercontent.com/74593343/122660728-66958b00-d1be-11eb-9ac1-f6362c3a37c2.gif)
 
 
