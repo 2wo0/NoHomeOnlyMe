@@ -1,6 +1,8 @@
 # Team NoHomeOnlyMe
 
 ## 🏠 프로젝트 소개
+![image](https://user-images.githubusercontent.com/74593343/122660489-f5a1a380-d1bc-11eb-9da2-ab1a808b6cb2.png)
+
 
 React를 사용한 '다방' 웹사이트 클론  
 https://www.dabangapp.com/?gclid=Cj0KCQjwytOEBhD5ARIsANnRjVh7Jh6Qpw5MnmuREflBFhQSucuVsVhSURDkkSBLWlxnCRYXFeXJUAIaAlXBEALw_wcB
@@ -33,8 +35,6 @@ https://www.dabangapp.com/?gclid=Cj0KCQjwytOEBhD5ARIsANnRjVh7Jh6Qpw5MnmuREflBFhQ
 
   #### React
 
-  #### EC2
-
 - BackEnd
 
   #### Python
@@ -58,8 +58,6 @@ https://www.dabangapp.com/?gclid=Cj0KCQjwytOEBhD5ARIsANnRjVh7Jh6Qpw5MnmuREflBFhQ
 ---
 
 # ⭐️ 구현한 기능
-
-## 🌱 Frontend
 
 ### KakaoTalk API (소셜로그인)
 
